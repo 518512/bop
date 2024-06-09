@@ -63,6 +63,10 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
+# Modify default uhttpd
+sed -i '/list listen_https '\''0.0.0.0:443'\''/s/^/#/' package/network/services/uhttpd/files/uhttpd.config
+sed -i '/list listen_https '\''\[::\]:443'\''/s/^/#/' package/network/services/uhttpd/files/uhttpd.config
+
 # 删除
 # Sound Support
 config_package_del kmod-sound-core
