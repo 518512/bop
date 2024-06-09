@@ -90,14 +90,16 @@ config_package_add autocore
 config_package_add lm-sensors-detect
 # nano 替代 vim
 config_package_add nano
-# upnp
+# add upnp full
 config_package_add luci-app-upnp
+config_package_add libupnp
+config_package_add miniupnpc
 # tty 终端
 config_package_add luci-app-ttyd
 # docker -Del
 ## config_package_add luci-app-dockerman
-# kms
-config_package_add luci-app-vlmcsd
+# kms - Del
+# config_package_add luci-app-vlmcsd
 # usb 2.0 3.0 支持
 config_package_add kmod-usb2
 config_package_add kmod-usb3
@@ -152,7 +154,7 @@ config_package_add mosdns
 
 # add turboacc
 config_package_add luci-app-turboacc
-config_package_add luci-app-turboacc=y
+config_package_add luci-app-turboacc
 config_package_add luci-app-turboacc_INCLUDE_OFFLOADING
 config_package_add luci-app-turboacc_INCLUDE_DNSFORWARDER
 config_package_add luci-app-turboacc_INCLUDE_DNSPROXY
@@ -161,8 +163,113 @@ config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM
 
 # add oc wg zt
 config_package_add luci-app-wireguard
+config_package_add luci-proto-wireguard
+config_package_add wireguard-tools
+config_package_add kmod-wireguard
 config_package_add luci-app-zerotier
 config_package_add luci-app-openclash
+
+# ddns
+config_package_add ddns-scripts_aliyun
+config_package_add ddns-scripts_dnspod
+config_package_add luci-app-ddns
+config_package_add ddns-scripts
+config_package_add ddns-scripts-cloudflare
+config_package_add ddns-scripts-services
+config_package_add luci-i18n-ddns-zh-cn
+
+# add nlbwmon
+config_package_add luci-app-nlbwmon
+config_package_add luci-i18n-nlbwmon-zh-cn
+config_package_add nlbwmon
+
+# add network full
+config_package_add dnsmasq-full
+config_package_add dnsmasq_full_auth
+config_package_add dnsmasq_full_conntrack
+config_package_add CONFIG_PACKAGE_dnsmasq_full_dhcp
+config_package_add nsmasq_full_dhcpv6
+config_package_add dnsmasq_full_dnssec
+config_package_add dnsmasq_full_ipset
+config_package_add dnsmasq_full_noid
+config_package_add dnsmasq_full_tftp
+config_package_add haproxy
+config_package_add ip-full
+config_package_add ip6tables-extra
+config_package_add ip6tables-mod-nat
+config_package_add ipset
+config_package_add iptables-mod-conntrack-extra
+config_package_add iptables-mod-extra
+config_package_add iptables-mod-iprange
+config_package_add iptables-mod-ipsec
+config_package_add iptables-mod-socket
+config_package_add iptables-mod-tproxy
+config_package_add iptables-nft
+ config_package_add iputils-arping
+# config_package_add kmod-button-hotplug is not set
+config_package_add kmod-crypto-acompress
+config_package_add kmod-crypto-aead
+config_package_add kmod-crypto-authenc
+config_package_add kmod-crypto-cbc
+config_package_add kmod-crypto-deflate
+config_package_add kmod-crypto-des
+config_package_add kmod-crypto-echainiv
+config_package_add kmod-crypto-hmac
+config_package_add kmod-crypto-kpp
+config_package_add kmod-crypto-lib-chacha20
+config_package_add kmod-crypto-lib-chacha20poly1305
+config_package_add kmod-crypto-lib-curve25519
+config_package_add kmod-crypto-lib-poly1305
+config_package_add kmod-crypto-manager
+config_package_add kmod-crypto-md5
+config_package_add kmod-crypto-null
+config_package_add kmod-crypto-rng
+config_package_add kmod-crypto-sha1
+config_package_add kmod-crypto-sha256
+config_package_add kmod-crypto-sha512
+config_package_add kmod-dnsresolver
+config_package_add kmod-fs-nfs
+config_package_add kmod-fs-nfs-common
+config_package_add kmod-fs-nfs-v3
+config_package_add kmod-fs-nfs-v4
+config_package_add kmod-fs-squashfs
+config_package_add kmod-inet-diag
+# config_package_add kmod-input-core is not set
+config_package_add kmod-ip6tables
+config_package_add kmod-ip6tables-extra
+config_package_add kmod-ipsec
+config_package_add kmod-ipsec4
+config_package_add kmod-ipsec6
+config_package_add kmod-ipt-conntrack
+config_package_add kmod-ipt-conntrack-extra
+config_package_add kmod-ipt-core
+config_package_add kmod-ipt-extra
+config_package_add kmod-ipt-iprange
+config_package_add kmod-ipt-ipsec
+config_package_add kmod-ipt-ipset
+config_package_add kmod-ipt-nat
+config_package_add kmod-ipt-nat6
+config_package_add kmod-ipt-raw
+config_package_add kmod-ipt-socket
+config_package_add kmod-ipt-tproxy
+config_package_add kmod-iptunnel
+config_package_add kmod-iptunnel4
+config_package_add kmod-iptunnel6
+config_package_add kmod-lib-zlib-deflate
+config_package_add kmod-lib-zlib-inflate
+config_package_add kmod-nf-conntrack-netlink
+config_package_add kmod-nf-ipt
+config_package_add kmod-nf-ipt6
+config_package_add kmod-nf-nat6
+config_package_add kmod-nf-socket
+config_package_add kmod-nft-compat
+config_package_add kmod-nft-socket
+config_package_add kmod-oid-registry
+config_package_add kmod-sit
+config_package_add kmod-tun
+config_package_add kmod-udptunnel4
+config_package_add kmod-udptunnel6
+
 
 # 镜像生成
 # 修改分区大小
