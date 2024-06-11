@@ -156,14 +156,14 @@ config_package_add luci-app-3ginfo-lite
 config_package_add luci-app-mosdns
 config_package_add mosdns
 
-# add turboacc
-config_package_add luci-app-turboacc
-config_package_add luci-app-turboacc
-config_package_add luci-app-turboacc_INCLUDE_OFFLOADING
-config_package_add luci-app-turboacc_INCLUDE_DNSFORWARDER
-config_package_add luci-app-turboacc_INCLUDE_DNSPROXY
-config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE
-config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM
+# add turboacc  待恢复20240611测试不是此项影响
+# config_package_add luci-app-turboacc
+# config_package_add luci-app-turboacc
+# config_package_add luci-app-turboacc_INCLUDE_OFFLOADING
+# config_package_add luci-app-turboacc_INCLUDE_DNSFORWARDER
+# config_package_add luci-app-turboacc_INCLUDE_DNSPROXY
+# config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE
+# config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM
 
 # add oc wg zt
 config_package_add luci-app-wireguard
@@ -182,10 +182,10 @@ config_package_add ddns-scripts-cloudflare
 config_package_add ddns-scripts-services
 config_package_add luci-i18n-ddns-zh-cn
 
-# add nlbwmon
-config_package_add luci-app-nlbwmon
-config_package_add luci-i18n-nlbwmon-zh-cn
-config_package_add nlbwmon
+# add nlbwmon 待恢复20240611测试
+# config_package_add luci-app-nlbwmon
+# config_package_add luci-i18n-nlbwmon-zh-cn
+# config_package_add nlbwmon
 
 # add network full
 config_package_add dnsmasq-full
