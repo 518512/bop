@@ -63,9 +63,6 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
-# Modify default uhttpd
-cd immortalwrt/package/libs/ && rm -rf openssl/
-cp -r istoreos/package/libs/openssl/ openssl/
 
 # 删除
 # Sound Support
