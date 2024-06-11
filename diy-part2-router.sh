@@ -153,7 +153,7 @@ config_package_add luci-app-3ginfo-lite
 config_package_add luci-app-mosdns
 config_package_add mosdns
 
-# add turboacc  待恢复20240611测试不是此项影响
+# add turboacc  待恢复20240611测试不是此项影响-01
 # config_package_add luci-app-turboacc
 # config_package_add luci-app-turboacc
 # config_package_add luci-app-turboacc_INCLUDE_OFFLOADING
@@ -170,21 +170,21 @@ config_package_add kmod-wireguard
 config_package_add luci-app-zerotier
 config_package_add luci-app-openclash
 
-# ddns
-config_package_add ddns-scripts_aliyun
-config_package_add ddns-scripts_dnspod
-config_package_add luci-app-ddns
-config_package_add ddns-scripts
-config_package_add ddns-scripts-cloudflare
-config_package_add ddns-scripts-services
-config_package_add luci-i18n-ddns-zh-cn
+# ddns    待恢复20240611测试不是此项影响-02
+#config_package_add ddns-scripts_aliyun
+#config_package_add ddns-scripts_dnspod
+#config_package_add luci-app-ddns
+#config_package_add ddns-scripts
+#config_package_add ddns-scripts-cloudflare
+#config_package_add ddns-scripts-services
+#config_package_add luci-i18n-ddns-zh-cn
 
-# add nlbwmon 待恢复20240611测试
+# add nlbwmon   待恢复20240611测试不是此项影响-02
 # config_package_add luci-app-nlbwmon
 # config_package_add luci-i18n-nlbwmon-zh-cn
 # config_package_add nlbwmon
 
-# add network full
+# add network full 待恢复20240611测试不是此项影响-00
 config_package_add dnsmasq-full
 config_package_add dnsmasq_full_auth
 config_package_add dnsmasq_full_conntrack
