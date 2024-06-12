@@ -170,7 +170,7 @@ config_package_add kmod-wireguard
 config_package_add luci-app-zerotier
 config_package_add luci-app-openclash
 
-# ddns    待恢复20240611测试不是此项影响-02
+# ddns---待恢复20240612测试,确认此插件会导致后台无法直接打开。
 #config_package_add ddns-scripts_aliyun
 #config_package_add ddns-scripts_dnspod
 #config_package_add luci-app-ddns
