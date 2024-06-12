@@ -154,13 +154,13 @@ config_package_add luci-app-mosdns
 config_package_add mosdns
 
 # add turboacc  待恢复20240611测试不是此项影响-01
-# config_package_add luci-app-turboacc
-# config_package_add luci-app-turboacc
-# config_package_add luci-app-turboacc_INCLUDE_OFFLOADING
-# config_package_add luci-app-turboacc_INCLUDE_DNSFORWARDER
-# config_package_add luci-app-turboacc_INCLUDE_DNSPROXY
-# config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE
-# config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM
+config_package_add luci-app-turboacc
+config_package_add luci-app-turboacc
+config_package_add luci-app-turboacc_INCLUDE_OFFLOADING
+config_package_add luci-app-turboacc_INCLUDE_DNSFORWARDER
+config_package_add luci-app-turboacc_INCLUDE_DNSPROXY
+config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE
+config_package_add luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM
 
 # add oc wg zt
 config_package_add luci-app-wireguard
