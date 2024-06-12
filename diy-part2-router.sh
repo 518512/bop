@@ -180,9 +180,9 @@ config_package_add luci-app-openclash
 #config_package_add luci-i18n-ddns-zh-cn
 
 # add nlbwmon   待恢复20240611测试不是此项影响-02
-# config_package_add luci-app-nlbwmon
-# config_package_add luci-i18n-nlbwmon-zh-cn
-# config_package_add nlbwmon
+config_package_add luci-app-nlbwmon
+config_package_add luci-i18n-nlbwmon-zh-cn
+config_package_add nlbwmon
 
 # add network full 待恢复20240611测试不是此项影响-00
 config_package_add dnsmasq-full
